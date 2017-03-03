@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/activity_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dl7.simplebutton.MainActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.dl7.simplebutton.SimpleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:sb_bg_color="@color/colorAccent"
+        app:sb_shape="arc"
+        app:sb_gravity="right"
+        app:sb_mode="icon_check_change"
+        app:sb_icon_change="@mipmap/ic_del"
+        app:sb_icon_padding="3dp"
+        app:sb_border_color="@color/colorAccent"
+        app:sb_border_radius="10dp"
+        app:sb_text="@string/app_name"
+        app:sb_text_color="@android:color/white"
+        app:sb_text_size="22sp"
+        app:sb_vertical_padding="10dp"
+        android:id="@+id/tagView"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <com.dl7.simplebutton.SimpleButton
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            app:sb_mode="icon_check_invisible"
+            app:sb_border_radius="15dp"
+            app:sb_icon="@mipmap/ic_add"
+            app:sb_icon_padding="3dp"
+            app:sb_gravity="right"
+            app:sb_bg_color="@android:color/white"
+            app:sb_border_color="@color/colorAccent"
+            app:sb_text="@string/app_name"
+            app:sb_text_color="@color/colorAccent"
+            app:sb_bg_color_check="@color/colorAccent"
+            app:sb_border_color_check="@color/colorAccent"
+            app:sb_text_color_check="@android:color/white"
+            app:sb_text_check="这是变换的文字"
+            app:sb_text_size="16sp"/>
+
+        <com.dl7.simplebutton.SimpleButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:sb_shape="arc"
+            app:sb_bg_color="@color/colorAccent"
+            app:sb_border_color="@color/colorAccent"
+            app:sb_text="@string/long_string"
+            app:sb_text_size="16sp"/>
+
+    </LinearLayout>
+</LinearLayout>
